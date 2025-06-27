@@ -161,3 +161,73 @@ ul .lists {
 .paragraph2 {
     font-size: 1.4rem;
 }
+
+#our-results {
+    background-image: url("headphones_hero_2.jpg");
+    display: inline-block;
+    margin-top: 100px;
+    color: #ffffff;
+    padding-bottom: 100px;
+}
+
+.pentagones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+    padding-right: 120px;
+    padding-left: 160px;
+    gap: 80px;
+    text-align: center;
+    object-fit: cover;
+}
+
+.second-div {
+    margin-top: 100px;
+}
+
+.heading2 {
+    margin-top: 140px;
+    color: #ffffff;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.second-paragraph {
+    text-align: center;
+    color: #ffffff;
+    margin: 30px 365px 0px 365px;
+    padding: 15px 5px 15px 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.pentagone {
+    background-image: url("pentagone.png");
+    width: 181px;
+    height: 172px;
+    background-size: 100%;
+    justify-self: self-start;
+    align-self: self-start;
+}
+
+.pentagones h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 4em;
+
+}
+
+.pentagone p {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1em;
+}
