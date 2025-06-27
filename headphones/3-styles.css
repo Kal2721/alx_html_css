@@ -12,9 +12,16 @@ html {
 
 body {
     font-family: SourceSansPro-Bold !important;
+    display: block;
     background-color: #ffffff;
     color: #4e5967;
-    line-height: 2.5rem;
+    line-height: 1.9rem;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -30,26 +37,38 @@ a {
 
 hr {
     margin: 0.5rem 0;
-    border: 0.005px groove #4e5967;
+    border: 0.005px ridge #4e5967;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: auto;
+    width: 100%;
+    text-align: center;
 }
-
+.navigation{
+    display: inline-block;
+}
 .head {
     background-image: url("headphones_hero_1.jpg");
     display: inline-block;
     object-fit: cover;
+    background-size: 100%;
     columns: #ffffff;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 30px;
+    padding: 10px;
 
 }
 
 ul .logo {
     margin-top: 10px;
-    margin-left: 170px;
+    margin-left: 120px;
     width: 170px;
     height: 30px;
 }
@@ -61,40 +80,43 @@ li {
 
 li a {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: #ffffff;
     text-decoration: none;
     padding-left: 10px;
 
 }
 
-li a:hover {
+li .logo:hover {
     background-color: #4e5967;
     opacity: 0.9;
 }
 
-ul .lists {
+.lists {
     margin-top: 10px;
     grid-column: auto;
-    gap: 5px;
+    gap: 2px;
 }
+li .lists:hover{
 
+    color: red !important;
+}
 .heading {
     color: #ffffff;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     grid-row: 1 / -1;
-    padding-top: 150px;
-    margin-top: 100px;
+    padding-top: 120px;
+    margin-top: 70px;
     margin-bottom: 0;
 }
 
 .subtitle1 {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 .call-to-action {
@@ -103,14 +125,14 @@ ul .lists {
     text-align: center;
     align-self: center;
     justify-self: center;
-    border: 1px;
+    border: 0.5px;
     border-color: #ff6565;
-    padding: 14px 40px 14px 40px;
+    padding: 9px 22px 9px 22px;
     border-radius: 25px;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #ffffff;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
 }
 
 .call-to-action:hover {
@@ -122,27 +144,26 @@ ul .lists {
 .paragraph {
     text-align: center;
     color: #ffffff;
-    margin-top: 50px;
     padding: 15px 5px 15px 5px;
-    font-size: 1.5rem;
-    margin: 90px 365px 110px 365px;
+    font-size: 1.2rem;
+    margin: 35px 250px 55px 250px;
 }
 
 .heading1 {
-    margin-top: 100px;
+    margin-top: 70px;
     color: cc;
     justify-self: center;
     align-self: center;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .first-paragraph {
     text-align: center;
     color: #4e5967;
-    margin: 30px 365px 0px 365px;
+    font-size: 1.2rem;
+    margin: 18px 250px 55px 250px;
     padding: 15px 5px 15px 5px;
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -151,23 +172,31 @@ ul .lists {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
+    width: 100%;
+    height: 100%;
     margin-top: 100px;
-    padding-right: 120px;
-    padding-left: 160px;
-    gap: 80px;
+    padding-right: 100px;
+    padding-left: 120px;
+    gap: 50px;
     text-align: center;
 }
 
 .paragraph2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 #our-results {
     background-image: url("headphones_hero_2.jpg");
+    background-size: 100%;
     display: inline-block;
     margin-top: 100px;
     color: #ffffff;
     padding-bottom: 100px;
+    align-self: center;
+    justify-self: center;
 }
 
 .pentagones {
@@ -240,14 +269,6 @@ ul .lists {
     font-weight: bold;
 }
 
-hr {
-    margin: auto;
-    margin-bottom: 20px;
-    padding: auto;
-    width: 100%;
-    text-align: center;
-    border: 0.2px ridge #4e5967;
-}
 #call{
     margin-top: 55px;
 }
@@ -279,4 +300,32 @@ hr {
     font-size: 1rem;
     align-content: center;
     justify-content: center;
+}
+@media only screen and (max-width: 720){
+   .what-we-do, .pentagones, .foot{
+       grid-template-columns: 1fr 1fr;
+   }
+}
+@media only screen and (max-width: 480px){
+    .what-we-do, .pentagones, .foot{
+        grid-template-columns: 1fr;
+        }
+        li .lists {
+            display: none;
+            flex-direction: column;
+            background: #333;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 200px;
+            padding: 1rem;
+          }
+        
+          li .lists.active {
+            display: flex;
+          }
+        
+          .hamburger {
+            display: block;
+          }
 }
